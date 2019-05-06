@@ -20,10 +20,8 @@ BuildArch: noarch
 
 BuildRequires: make
 BuildRequires: ttfautohint
-BuildRequires: python3-fontmake
 BuildRequires: libappstream-glib
 BuildRequires: fontpackages-devel >= 1.13, xorg-x11-font-utils
-BuildRequires: python3-setuptools
 
 %description
 %{summary}.
@@ -38,10 +36,10 @@ BuildRequires: python3-setuptools
 
 %build
 # Clean built fonts first:
-%{__rm} build/ttf/*
-%{__rm} build/web/fonts/*
+#%{__rm} build/ttf/*
+#%{__rm} build/web/fonts/*
 
-%{__make} ttf
+#%{__make} ttf
 
 
 %install
