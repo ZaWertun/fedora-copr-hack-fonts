@@ -1,0 +1,30 @@
+diff -r -U3 Hack-3.003.orig/build-ttf.sh Hack-3.003/build-ttf.sh
+--- Hack-3.003.orig/build-ttf.sh	2018-03-06 05:13:13.000000000 +0300
++++ Hack-3.003/build-ttf.sh	2019-02-09 13:38:09.632460900 +0300
+@@ -53,7 +53,7 @@
+ 	    INSTALLFLAG=1
+ fi
+ # fontTools python library can be imported
+-if ! python -c "import fontTools"
++if ! python3 -c "import fontTools"
+ 	then
+ 	    echo "Unable to install fontTools with 'pip install fonttools'.  Please attempt a manual install of this build dependency and then repeat your build attempt." 1>&2
+ 	    INSTALLFLAG=1
+@@ -144,7 +144,7 @@
+ echo " "
+ echo "Attempting DSIG table fixes with fontbakery..."
+ echo " "
+-if ! python postbuild_processing/fixes/fix-dsig.py master_ttf/*.ttf
++if ! python3 postbuild_processing/fixes/fix-dsig.py master_ttf/*.ttf
+ 	then
+ 	    echo "Unable to complete DSIG table fixes on the release files"
+ 	    exit 1
+@@ -154,7 +154,7 @@
+ echo " "
+ echo "Attempting fstype fixes with fontbakery..."
+ echo " "
+-if ! python postbuild_processing/fixes/fix-fstype.py master_ttf/*.ttf
++if ! python3 postbuild_processing/fixes/fix-fstype.py master_ttf/*.ttf
+ 	then
+ 	    echo "Unable to complete fstype fixes on the release files"
+ 	    exit 1
