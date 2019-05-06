@@ -7,7 +7,7 @@ Summary: A CFF table subroutinizer for FontTools
 
 License: ASL 2.0
 URL:     https://pypi.org/project/%{pkgname}
-Source0: https://github.com/googlei18n/%{pkgname}/archive/v%{version}/%{pkgname}-%{version}.tar.gz
+Source0: https://github.com/googlei18n/%{pkgname}/archive/%{version}/%{pkgname}-%{version}.tar.gz
 
 %description
 A CFF table subroutinizer for FontTools.

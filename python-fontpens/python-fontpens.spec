@@ -8,7 +8,7 @@ Summary:        A collection of classes implementing the pen protocol for manipu
 
 License:        BSD
 URL:            https://pypi.org/project/%{srcname}
-Source0:        https://github.com/robotools/%{srcname}/archive/%{version}/%{srcname}-%{version}.tar.gz
+Source0:        https://github.com/robotools/%{srcname}/archive/v%{version}/%{srcname}-%{version}.tar.gz
 
 BuildArch:      noarch
 

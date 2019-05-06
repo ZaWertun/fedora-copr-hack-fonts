@@ -27,6 +27,8 @@ BuildRequires:  python2-pytest-runner
 BuildRequires:  python2-fonttools
 BuildRequires:  python2-fs
 BuildRequires:  python2-lxml
+# For tests:
+BuildRequires:  python2-unicodedata2
 Requires: python2-lxml
 Requires: python2-fonttools
 
@@ -46,6 +48,8 @@ BuildRequires:  python3-pytest-runner
 BuildRequires:  python3-fonttools
 BuildRequires:  python3-fs
 BuildRequires:  python3-lxml
+# For tests:
+BuildRequires:  python3-unicodedata2
 Requires: python3-lxml
 Requires: python3-fonttools
 

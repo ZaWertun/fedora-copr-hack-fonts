@@ -29,6 +29,8 @@ BuildRequires: python2-attrs >= 18.2.0
 BuildRequires: python2-typing >= 3.6.4
 BuildRequires: python2-fonttools >= 3.34.0
 BuildRequires: python2-singledispatch >= 3.4.0.3
+# For tests:
+BuildRequires:  python2-fs
 Requires: python2-lxml
 Requires: python2-enum34
 Requires: python2-attrs >= 18.2.0
@@ -50,6 +52,8 @@ BuildRequires: python3-setuptools_scm
 BuildRequires: python3-lxml
 BuildRequires: python3-attrs >= 18.2.0
 BuildRequires: python3-fonttools >= 3.34.0
+# For tests:
+BuildRequires:  python3-fs
 Requires: python3-lxml
 Requires: python3-attrs >= 18.2.0
 Requires: python3-fonttools >= 3.34.0
