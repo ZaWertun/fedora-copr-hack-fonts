@@ -5,13 +5,15 @@ pyftpdlib is currently the most complete RFC-959 FTP server implementation\
 available for Python programming language.\
 
 Name:           pyftpdlib
-Version:        1.5.4
-Release:        3%{?dist}
+Version:        1.5.5
+Release:        4%{?dist}
 Summary:        Python FTP server library
 
 License:        MIT
 URL:            https://github.com/giampaolo/pyftpdlib
 Source0:        https://github.com/giampaolo/pyftpdlib/archive/release-%{version}.tar.gz
+
+Patch0:         skip_broken_tests.patch
 
 BuildArch:      noarch
 
@@ -61,7 +63,7 @@ Provides:       pyftpdlib
 This package provides pyftpdlib for Python 3.
 
 %prep
-%setup -qn %{srcname}-release-%{version}
+%autosetup -p1 -n %{srcname}-release-%{version}
 
 # Remove exec bit from demo
 chmod -x demo/*
@@ -97,6 +99,9 @@ PYTHONPATH=. %{__python3} setup.py test
 %{_bindir}/ftpbench
 
 %changelog
+* Mon May 06 2019 Yaroslav Sidlovsky <zawertun@gmail.com> - 1.5.5-4
+- Update to 1.5.5
+
 * Tue Jun 19 2018 Miro Hrončok <mhroncok@redhat.com> - 1.5.4-3
 - Rebuilt for Python 3.7
 
