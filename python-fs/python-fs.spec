@@ -8,7 +8,7 @@ Summary:        Python's Filesystem abstraction layer
 
 License:        MIT
 URL:            https://pypi.python.org/pypi/%{srcname}
-Source0:        https://github.com/PyFilesystem/%{srcname}/archive/%{version}/%{srcname}-%{version}.tar.gz
+Source0:        https://github.com/PyFilesystem/%{srcname}/archive/v%{version}/%{srcname}-%{version}.tar.gz
 
 BuildArch:      noarch
 
