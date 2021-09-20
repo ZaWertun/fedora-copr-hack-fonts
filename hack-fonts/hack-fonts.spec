@@ -19,6 +19,7 @@ Patch2:  ttfautohint_invalid_glyph_name.patch
 BuildArch: noarch
 
 BuildRequires: make
+BuildRequires: mkfontscale
 BuildRequires: ttfautohint
 BuildRequires: libappstream-glib
 BuildRequires: fontpackages-devel >= 1.13, xorg-x11-font-utils
